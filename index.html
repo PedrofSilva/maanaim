@@ -26,13 +26,11 @@
       <nav id="myNavbar" class="navbar navbar-expand-md navbar-dark fixed-top navbar-color">
         
         <!--Imagem logo Manaim--> 
-        <div id="logo">
-        <a class="img-logo  ml-5" href="#"></a>
+        <div >
+        <a id="logo" class="img-logo  ml-5" href="#"></a>
         </div>
 
-        <div id="logo">
-        <a class="img-logo2  " href="#"></a>
-        </div>
+       
       
       
 
@@ -230,6 +228,14 @@ Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica 
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
 function myFunction() {
+
+var logo = document.getElementById("logo");
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        logo.className = "img-logo2 ml-5";
+    } else {
+        logo.className = logo.className.replace("img-logo2 ml-5", "img-logo ml-5");
+}
+
 var navbar = document.getElementById("myNavbar");
 if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         navbar.className = "navbar" + " animated" + " fadeInDown" + " navbar-expand-md" + " navbar-light" + " fixed-top" + " bg-white text-dark shadow";

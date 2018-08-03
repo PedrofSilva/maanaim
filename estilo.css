@@ -148,10 +148,10 @@ footer{
 
 .navbar-light .navbar-nav .nav-link {
   	color: black;
-	font-size: 19px;
+	font-size: 15px;
 	padding: 10px 45px 10px 0;
 	transition-property: background;
-
+	font-weight: bold;
 
  }
 
@@ -163,8 +163,9 @@ footer{
 
 .navbar-dark .navbar-nav .nav-link, #rodape .nav {
 	color: white;
-	font-size: 19px;
+	font-size: 15px;
 	padding: 10px 45px 10px 0;
+	font-weight: bold;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover, #rodape .nav :hover{
@@ -338,6 +339,7 @@ h3{
     width: 500px;
     height: 200px;
     bottom: 0;
+   
    
   }
 
