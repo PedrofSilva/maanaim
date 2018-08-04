@@ -160,11 +160,16 @@ footer{
 
 
 
+#rodape .nav {
+	color: white;
+	font-size: 15px;
+	padding: 10px 45px 10px 0;
+}
 
 
 
 
-.navbar-dark .navbar-nav .nav-link, #rodape .nav {
+.navbar-dark .navbar-nav .nav-link {
 	color: white;
 	font-size: 15px;
 	padding: 10px 45px 10px 0;
@@ -173,12 +178,6 @@ footer{
 
 .navbar-dark .navbar-nav .nav-link:hover, #rodape .nav :hover{
 	color: grey;
-	
-
-	
-	
-
-	
 }
 
 .navbar-dark .navbar-nav .nav-link:disable, #rodape .nav :disable {
@@ -297,6 +296,7 @@ h3{
 	color: #919496;
 	font-size: 15px;
 	text-transform: uppercase;
+
 }
 
 .item-rede-social{
@@ -361,4 +361,38 @@ h3{
 .img-icon{
 	width: 35px;
 	height:35px;
+}
+
+.img-opacidade{
+	opacity: 0.5;
+}
+
+
+
+/*Efeitos de fundo*/
+.img-teste{
+	
+	width: 100px;
+    height: 100px;
+    background: url(imagens/teste.jpg) center no-repeat;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+.img-teste2{
+	width: 154px;
+    height: 155px;
+    background: url(imagens/teste.jpg) center no-repeat;
+    top: 50px;
+    left: 250px;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+.img-comunidade-principal{
+	z-index: 2;
 }
