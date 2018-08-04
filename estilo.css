@@ -380,7 +380,7 @@ h3{
     position: absolute;
     z-index: 0;
     opacity: 0.3;
-    animation-delay: 0.15;
+    transition: 15s;
 }
 
 .img-teste2{
@@ -392,7 +392,7 @@ h3{
     position: absolute;
     z-index: 0;
     opacity: 0.3;
-    animation-delay: 0.20;
+    transition: 100s;
 }
 
 .img-teste3{
@@ -404,7 +404,7 @@ h3{
     position: absolute;
     z-index: 0;
     opacity: 0.3;
-    animation-delay: 0.25;
+   transition: 100s;
 }
 
 .img-teste4{
@@ -416,7 +416,7 @@ h3{
     position: absolute;
     z-index: 0;
     opacity: 0.2;
-    animation-delay: 0.30;
+    transition: 5s;
 }
 
 .img-teste5{
@@ -428,6 +428,7 @@ h3{
     position: absolute;
     z-index: 0;
     opacity: 0.3;
+    transition: 2s;
     
 }
 
@@ -442,6 +443,7 @@ h3{
     position: absolute;
     z-index: 1;
     opacity: 0.3;
+    transition: 15s;
 
     
 }
@@ -458,6 +460,7 @@ h3{
     position: absolute;
     z-index: 0;
     opacity: 0.3;
+    transition: 8s;
 }
 
 .img-teste8{
@@ -471,6 +474,8 @@ h3{
     position: absolute;
     z-index: 1;
     opacity: 0.3;
+    
+    
     
 }
 /*
@@ -498,14 +503,53 @@ h3{
 	animation-delay: 5.0s;
 }
 
+.anime-right{
+	opacity: 0;
+	transform: translate3d(0,-100px,0);
+	transition: 2s;
+
+}
+
 .anime{
 	opacity: 0;
-	transform: translate3d(0,0,-100px);
-	transition: 1s;
+	transition: 10s;
+	/*transform: translate3d(0,0,-100px);*/
+	
 }
 
 .anime-start{
-	opacity: 1;
+	opacity: 0.3;
 	transform: translate3d(0,0,0);
 
+}
+
+.slide-in-top {
+	animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-out-top {
+	
+	        animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes slide-out-top {
+  0% {
+    transform: translateY(0);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-1000px);
+    opacity: 0.3;
+  }
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.3;
+  }
 }

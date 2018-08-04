@@ -128,13 +128,13 @@ Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica 
                   <div class="col-md-6">
                     <!--Teste efeito background-->
                     <!--<div class="img-teste img-thumbnail"></div>-->
-                    <div class="img-teste2 img-thumbnail"></div>
-                    <div class="img-teste3 img-thumbnail"></div>
-                    <div class="img-teste4 img-thumbnail"></div>
-                    <div class="img-teste5 img-thumbnail"></div>
-                    <div class="img-teste6 img-thumbnail"></div>
-                    <div class="img-teste7 img-thumbnail"></div>
-                    <div class="img-teste8 img-thumbnail"></div>
+                    <div class="anime img-teste2 img-thumbnail"></div>
+                    <div class="anime img-teste3 img-thumbnail"></div>
+                    <div class="anime img-teste4 img-thumbnail"></div>
+                    <div class="anime img-teste5 img-thumbnail"></div>
+                    <div class="anime img-teste6 img-thumbnail"></div>
+                    <div class="anime img-teste7 img-thumbnail"></div>
+                    <div class="anime img-teste8 img-thumbnail"></div>
                     
                     
 
@@ -178,7 +178,7 @@ Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica 
     <footer id="rodape" style="background-color: #2E2E2E">
        <div class="container">
           <div class="row">
-            <div class="anime col-md-6 text-white text-center ">
+            <div class="col-md-6 text-white text-center ">
               <img class="img-icon img-fluid my-2" src="imagens/icon-marcador.png"><br>
                 <h5 class="text-white">
                 Comunidade Evangélica Maanaim - Ilha<br>
@@ -280,6 +280,61 @@ if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         navbar.className = navbar.className.replace("navbar animated fadeInDown navbar-expand-md navbar-light fixed-top bg-white text-dark", " navbar animated fadeIn navbar-expand-md navbar-dark fixed-top navbar-color ");
     }
 }
+/*animacao barra de rolagem*/
+/*
+(function(){
+var $target = $('.anime'),
+    animationClass = 'slide-in-top',
+    offset = $(window).height()* 3/4;
+
+function animeScroll(){
+  var documentTop = $(document).scrollTop();
+  
+  $target.each(function(){
+    var itemTop = $(this).offset().top;
+    if(documentTop > itemTop - offset){
+      $(this).addClass(animationClass);
+    } else {
+      $(this).removeClass(animationClass);
+    }
+   
+  })
+} 
+
+animeScroll();
+
+$(document).scroll(function(){
+  animeScroll();
+})
+}());
+*/ 
+
+(function(){
+var $target = $('.anime'),
+    animationClass = 'slide-in-top',
+    offset = $(window).height()* 3/4;
+
+function animeScroll(){
+  var documentTop = $(document).scrollTop();
+  
+  $target.each(function(){
+    var itemTop = $(this).offset().top;
+    if(documentTop > itemTop - offset){
+      $(this).addClass(animationClass);
+    } else {
+      $(this).removeClass(animationClass);
+    }
+   
+  })
+} 
+
+animeScroll();
+
+$(document).scroll(function(){
+  animeScroll();
+})
+}())
+
 
 
 
