@@ -374,25 +374,138 @@ h3{
 	
 	width: 100px;
     height: 100px;
-    background: url(imagens/teste.jpg) center no-repeat;
+    background: url(imagens/img5.jpg) center no-repeat;
     top: 0;
     left: 0;
     position: absolute;
     z-index: 0;
-    opacity: 0.5;
+    opacity: 0.3;
+    animation-delay: 0.15;
 }
 
 .img-teste2{
-	width: 154px;
-    height: 155px;
-    background: url(imagens/teste.jpg) center no-repeat;
-    top: 50px;
-    left: 250px;
+	width: 150px;
+    height: 100px;
+    background: url(imagens/img6.jpg) center no-repeat;
+    top: 15px;
+    left: 180px;
     position: absolute;
     z-index: 0;
-    opacity: 0.5;
+    opacity: 0.3;
+    animation-delay: 0.20;
 }
 
+.img-teste3{
+	width: 150px;
+    height: 100px;
+    background: url(imagens/img7.jpg) center no-repeat;
+    top: 2px;
+    left: 350px;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.3;
+    animation-delay: 0.25;
+}
+
+.img-teste4{
+	width: 150px;
+    height: 100px;
+    background: url(imagens/img8.jpg) center no-repeat;
+    top: 370px;
+    left: 20px;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.2;
+    animation-delay: 0.30;
+}
+
+.img-teste5{
+	width: 220px;
+    height: 200px;
+    background: url(imagens/img9.jpg) center no-repeat;
+    top: 275px;
+    left: 177px;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.3;
+    
+}
+
+.img-teste6{
+	width: 150px;
+    height: 100px;
+    background: url(imagens/img10.jpg) center no-repeat;
+    
+	
+    top: 255px;
+    left: 40px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.3;
+
+    
+}
+/*...*/
+
+.img-teste7{
+    width: 120px;
+    height: 100px;
+    background: url(imagens/img11.jpg) center no-repeat;
+    
+	
+    top: 370px;
+    left: 400px;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.3;
+}
+
+.img-teste8{
+	width: 150px;
+    height: 100px;
+    background: url(imagens/img12.jpg) center no-repeat;
+    
+	
+    top: 258px;
+    left: 388px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.3;
+    
+}
+/*
+.img-teste9{
+	width: 150px;
+    height: 155px;
+    background: url(imagens/img13.jpg) center no-repeat;
+    
+	
+    top: 207px;
+    left: 50px;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.3;
+}
+
+*/
 .img-comunidade-principal{
 	z-index: 2;
+}
+
+
+#comunidade [data-aos="zoom-in"]{
+	opacity: 0.5;
+	animation-delay: 5.0s;
+}
+
+.anime{
+	opacity: 0;
+	transform: translate3d(0,0,-100px);
+	transition: 1s;
+}
+
+.anime-start{
+	opacity: 1;
+	transform: translate3d(0,0,0);
+
 }
